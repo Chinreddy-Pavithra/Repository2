@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Create Account Page</title>
+<style>
+
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+body{
+  margin: 0;
+  padding: 0;
+  background: url(bg.png);
+}
+.signup-form h1{
+  margin-top: 100px;
+  font-family: 'Permanent Marker', cursive;
+  color: #fff;
+  font-size: 40px;
+}
+
+.box{
+  width: 400px;
+  padding: 60px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+  text-align: center;
+  border-radius:20px
+}
+.box h1{
+  color: white;
+  margin-top: 100px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+  font-weight: 900;
+  
+}
+.box input[type = "text"],.box input[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 250px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 350px;
+  border-color: #2ecc71;
+  font-size:20px
+}
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 40px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 30px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.textbox i{
+  width: 34px;
+  float: left;
+  text-align: center;
+  color: white
+}
+
+
+</style>
+</head>
+<body>
+<form class="box" action="signup.php" method="post">
+<h1>Create Account</h1>
+<input type="text" name="custid" placeholder="Customer Id" required>
+<input type="text" name="custname" placeholder="Customer Name" required>
+<input type="text" name="email" placeholder="E-Mail" required>
+<input type="text" name="balance" placeholder="Balance" required>
+<input type="Password" name="pwd" placeholder="Password" required>
+<input type="submit" name="" value="Signup" required></td>
+
+</form>
+</body>
+</html>
