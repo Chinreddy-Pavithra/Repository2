@@ -4,7 +4,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <style>
 	   *{
 padding: 0;
 margin:0;
@@ -122,6 +124,52 @@ nav ul{
 		  left:0;
 	  }
   }
+  
+/*Search bar*/
+  .form-search{
+    margin: 0 auto;
+    text-align: center;
+     top:50px;
+    font: bold 13px sans-serif;
+     max-width: 70%;
+    position: relative;
+}
+
+.form-search input{
+    width: 60%;
+    box-sizing: border-box;
+    border-radius:5px;
+    background-color:  #ffffff;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 15px 14px 40px;
+    border: 1px solid #b6c3cd;;
+    color:#4E565C;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.form-search button{
+   border-radius:5px;
+    background-color:  #9DFF62;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    color: #ffffff;
+    padding: 15px 29px;
+    margin-left: -4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.form-search i{
+    position: absolute;
+	border-radius:5px;
+    top: 15px;
+    left: 20px;
+    font-size: 16px;
+    color: #80A3BD;
+}
+
+ /*------------------------*/
 .sec{
 	 margin-top:80px;
 	 display:flex;
@@ -151,6 +199,7 @@ height: 606px;
  </style>
   </head>
 <body>
+<!------Navigation bar----->
   <header class="l-header">
     <nav>
        <input type="checkbox" id="check">
@@ -169,6 +218,14 @@ height: 606px;
          </ul>
     </nav>
   </header>
+  <!-----search bar-------->
+  <br><br>
+  <form class="form-search" method="get" action="#">
+            <input type="search" name="search" placeholder="search your book here for..">
+            &emsp;<button type="submit">Go</button>
+            
+   </form>
+  <!------stalls----------->
 <div class="sec">
    <div class="container" align="center">
        <div class="box" align="center">
